@@ -1,11 +1,14 @@
 # Site de Ivonete Morelo, hipnoterapeuta
 
-Site de uma página, com tudo num único `index.html` (estilos, código e fotos embutidos).
+Site de uma página. Estilos e código ficam no `index.html`, e as fotos ficam em `site/fotos/`.
+
+Publicado na Vercel: https://ivonetemorelohipnoterapeuta.vercel.app/ (o `vercel.json` indica a pasta `site/`).
 
 ## Pastas
 
 - `site/`: o que vai para a hospedagem. Envie todos os arquivos desta pasta para a raiz do domínio.
   - `index.html`, o site;
+  - `fotos/`, as fotos do site;
   - `og-image.jpg`, a imagem que aparece ao compartilhar o link no WhatsApp e nas redes;
   - `favicon-32.png` e `apple-touch-icon.png`, os ícones da aba e da tela inicial do celular.
 - `fonte/`: os arquivos para editar o site.
