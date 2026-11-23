@@ -46,6 +46,10 @@ FOTO_HERO = "hero.jpg"
 FOTO_SOBRE = "sobre.jpg"
 FOTO_CONSULTORIO = ""
 
+# False = as fotos vão como arquivos separados em site/fotos/ (página mais leve,
+# melhor para a prévia do WhatsApp). True = fotos embutidas no index.html.
+EMBUTIR_FOTOS = False
+
 # Depoimentos reais e autorizados. Lista vazia = seção escondida.
 # Formato: {"nome": "...", "tema": "...", "texto": "..."}
 DEPOIMENTOS = []
@@ -56,6 +60,10 @@ SAIDA = AQUI.parent / "site"
 
 
 def b64(caminho):
+    if not EMBUTIR_FOTOS:
+        (SAIDA / "fotos").mkdir(parents=True, exist_ok=True)
+        shutil.copy(AQUI / "fotos" / caminho, SAIDA / "fotos" / caminho)
+        return "fotos/" + caminho
     dados = (AQUI / "fotos" / caminho).read_bytes()
     return "data:image/jpeg;base64," + base64.b64encode(dados).decode()
 
@@ -79,7 +87,7 @@ def main():
         "name": f"{NOME} | {PROFISSAO}",
         "description": "Hipnose clínica para ansiedade, depressão e padrões que se repetem. Atendimento presencial em Pedra Azul, Domingos Martins (ES), e online.",
         "url": DOMINIO + "/",
-        "image": DOMINIO + "/og-image.jpg?v=1",
+        "image": DOMINIO + "/og-image.jpg?v=2",
         "telephone": "+" + WHATSAPP,
         "address": {
             "@type": "PostalAddress",
