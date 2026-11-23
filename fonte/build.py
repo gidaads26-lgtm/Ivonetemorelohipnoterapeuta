@@ -38,7 +38,7 @@ UF = "ES"
 CEP = "29260-000"
 
 # Endereço definitivo do site (troque quando o domínio for registrado)
-DOMINIO = "https://www.ivonetemorelo.com.br"
+DOMINIO = "https://ivonetemorelohipnoterapeuta.vercel.app"
 
 # Fotos (dentro de fonte/fotos). Deixe FOTO_CONSULTORIO vazio para
 # mostrar o espaço reservado sem foto.
