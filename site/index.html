@@ -376,7 +376,9 @@ dialog.politica::backdrop{background:rgba(32,25,19,.5)}
   .foto-local.sem-foto .recorte{aspect-ratio:16/10}
   .sobre-txt{text-align:center}
   .sobre-txt p{margin-inline:auto;text-align:left}
-  .sobre .acoes{justify-content:center}
+  .sobre .acoes{flex-direction:column;align-items:center;gap:.8rem}
+  .sobre .acoes .btn{position:relative;width:100%;max-width:21rem;padding-inline:3.6rem}
+  .sobre .acoes .btn svg{position:absolute;left:1.5rem;top:50%;margin-top:-.625rem}
   .sobre blockquote{text-align:left;margin-inline:auto}
   .acoes{justify-content:center}
   .depo-lista,.depo-lista.n2{grid-template-columns:minmax(0,1fr)}
