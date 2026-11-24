@@ -22,7 +22,7 @@ import serra
 NOME = "Ivonete Morelo"
 PRIMEIRO_NOME = "Ivonete"
 PROFISSAO = "Hipnoterapeuta"
-SUBTITULO = "Especialista em Ansiedade & Depressão"   # aparece abaixo do nome no cabeçalho
+SUBTITULO = "Hipnose Clínica"   # aparece abaixo do nome no cabeçalho
 WHATSAPP = "5528981145808"          # só números, com DDI e DDD
 INSTAGRAM = "https://www.instagram.com/ivonete_hipnoterapeuta/"
 INSTAGRAM_USUARIO = "@ivonete_hipnoterapeuta"
